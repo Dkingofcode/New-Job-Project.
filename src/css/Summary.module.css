@@ -1,51 +1,55 @@
 /* GPSummary.css */
 
-.gps-summary-container {
+.gpssummarycontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    justify-content: center;
+    padding: 60px;
+    width: 190vh;
+    height: 100vh;
+    border: 2px solid;
   }
   
-  .gps-summary-heading {
+  .gpssummaryheading {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
   }
   
-  .gps-summary-table {
+  .gpssummarytable {
     width: 100%;
     border-collapse: collapse;
   }
   
-  .gps-summary-table th,
-  .gps-summary-table td {
+  .gpssummarytable th,
+  .gpssummarytable td {
     padding: 10px;
     text-align: center;
     border: 1px solid #ccc;
   }
   
-  .gps-summary-table th {
+  .gpssummarytable th {
     background-color: #f2f2f2;
     font-weight: bold;
   }
   
-  .gps-summary-table th:first-child,
-  .gps-summary-table td:first-child {
+  .gpssummarytable th:first-child,
+  .gpssummarytable td:first-child {
     width: 30%;
   }
   
-  .gps-summary-table td {
+  .gpssummarytable td {
     cursor: pointer;
   }
   
-  .gps-summary-pagination {
+  .gpssummarypagination {
     display: flex;
     justify-content: center;
     margin-top: 20px;
   }
   
-  .gps-summary-pagination button {
+  .gpssummarypagination button {
     margin: 0 5px;
     padding: 5px 10px;
     border: none;
@@ -55,17 +59,18 @@
     cursor: pointer;
   }
   
-  .gps-summary-pagination button:hover {
+  .gpssummarypagination button:hover {
     background-color: #0056b3;
   }
   
-  .gps-summary-search {
-    margin-top: 20px;
+  .gpssummarysearch {
+    margin: 20px 0;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
   }
   
-  .gps-summary-search-input {
+  .gpssummarysearchinput {
     width: 200px;
     height: 30px;
     padding: 5px;

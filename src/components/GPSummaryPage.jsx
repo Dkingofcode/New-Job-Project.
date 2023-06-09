@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchGPSData } from '../api';
+import styles from "../css/Summary.module.css";
+
 
 const GPSummaryPage = () => {
   const [gpsData, setGPSData] = useState([]);
@@ -69,17 +71,18 @@ const GPSummaryPage = () => {
   };
 
   return (
-    <div>
-      <h2>GPS Summary Page</h2>
+    <div className={styles.gpssummarycontainer}>
+      <h2 className={styles.gpssummaryheading}>GPS Summary Page</h2>
       <div>
         <input
+        className={styles.gpssummarysearchinput}
           type="text"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search by device ID or device type"
         />
       </div>
-      <table>
+      <table className={styles.gpssummarytable}>
         <thead>
           <tr>
             <th onClick={() => sortGPSData('deviceId')}>Device ID</th>
