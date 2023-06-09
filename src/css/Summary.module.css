@@ -1,0 +1,87 @@
+/* GPSummary.css */
+
+.gps-summary-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .gps-summary-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .gps-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .gps-summary-table th,
+  .gps-summary-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .gps-summary-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .gps-summary-table th:first-child,
+  .gps-summary-table td:first-child {
+    width: 30%;
+  }
+  
+  .gps-summary-table td {
+    cursor: pointer;
+  }
+  
+  .gps-summary-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .gps-summary-pagination button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .gps-summary-pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  .gps-summary-search {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .gps-summary-search-input {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .gps-summary-search-button {
+    height: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .gps-summary-search-button:hover {
+    background-color: #0056b3;
+  }
+  
